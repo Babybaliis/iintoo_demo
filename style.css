@@ -2,17 +2,39 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''), url('../iintoo_demo/fonts/Barlow-Black.ttf') format('ttf'), url('../iintoo_demo/fonts/Barlow-Black.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../iintoo_demo/fonts/Barlow-Regular.woff2') format('woff2'), url('../iintoo_demo/fonts/Barlow-Regular.woff2') format('woff2');
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    max-width: 1600px
+}
+
 body {
     font-family: 'Barlow', sans-serif;
     background-color: #EFF6FF;
-    margin: 0;
-    padding: 100px 0 100px 0;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    position: fixed;
+    width: 100%;
 }
 
 .container {
     display: flex;
     max-width: 90%;
-    min-height: auto;
+    max-height: 90vh;
     margin: 0 auto;
     background-color: white;
     box-shadow: 0 0 60px #b4b1b1;
@@ -34,16 +56,16 @@ body {
 
 .block2 {
     width: 50%;
+    max-height: 90vh;
 }
 
-h1 {
-    font-family: 'Barlow', sans-serif;
+h2 {
     color: #2A4A5C;
     font-weight: 500;
 }
 
 .p1 {
-    font-size: 20px;
+    font-size: 15px;
     color: #2a4a5c93;
 }
 
@@ -53,7 +75,7 @@ h1 {
 }
 
 .form {
-    padding: 10% 10%;
+    padding: 5% 10%;
 }
 
 .btn_link {
@@ -64,7 +86,6 @@ h1 {
 .reg {
     display: flex;
     justify-content: space-between;
-    padding: 10% 0 5% 0;
     font-size: small;
 }
 
@@ -75,6 +96,8 @@ h1 {
     background-size: 20px;
     background-position: 15px center;
     text-decoration: none;
+    margin-right: 5%;
+    width: 52%;
 }
 
 .linkedin {
@@ -84,18 +107,18 @@ h1 {
     background-size: 20px;
     background-position: 15px center;
     text-decoration: none;
+    width: 52%;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
-    gap: 0;
-    padding: 5% 0;
+    gap: 5%;
     font-size: large;
 }
 
 .line {
-    margin: 6% 30%;
+    margin: 3% 30%;
 }
 
 h6 {
@@ -113,7 +136,7 @@ h6 span {
 }
 
 .info_style {
-    padding: 3% 8%;
+    padding: 3% 10%;
     border: 1px solid rgba(43, 43, 43, 0.164);
 }
 
@@ -124,7 +147,7 @@ h6 span {
 }
 
 h2 {
-    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Barlow', sans-serif; */
     color: #2A4A5C;
     font-weight: 500;
     font-size: 22px;
@@ -136,7 +159,6 @@ h2 {
 
 .label-radio {
     padding: 0px 1em 0px 8px;
-    margin-right: 5%
 }
 
 .radio-item {
@@ -155,6 +177,8 @@ h2 {
 
 .text-field_floating {
     position: relative;
+    /* margin-right: 7%; */
+    width: 100%;
 }
 
 .text-field_floating .text-field__input:focus {
@@ -162,6 +186,8 @@ h2 {
     border-left: 3px solid #03a9f4;
     border-color: #9ecaed;
     box-shadow: 0 0 10px #9ecaed;
+    margin-right: 7%;
+    width: 100%;
 }
 
 .text-field_floating .text-field__label {
@@ -174,6 +200,8 @@ h2 {
     border: 1px solid transparent;
     transform-origin: 0 0;
     transition: color .15s ease-in-out, transform .15s ease-in-out;
+    margin-right: 7%;
+    width: 100%;
 }
 
 .text-field_floating .text-field__input:focus,
@@ -181,6 +209,8 @@ h2 {
     padding-top: 20px;
     padding-bottom: 14px;
     font-size: large;
+    /* margin-right: 7%; */
+    width: 100%;
 }
 
 .text-field_floating .text-field__input:focus~.text-field__label,
@@ -189,9 +219,13 @@ h2 {
     color: gray;
 }
 
+.radio__item {
+    margin-right: 3%;
+}
+
 .text {
-    max-width: 50%;
-    margin: 30px 0 50px;
+    max-width: 70%;
+    margin: 30px 0 30px;
     box-shadow: 0 0 20px #ececec;
     padding: 5px;
     border-radius: 5px;
@@ -199,7 +233,7 @@ h2 {
 
 .description {
     margin: 0;
-    padding: 5%;
+    padding: 1%;
     font-size: 13px;
     color: #b4b1b1;
 }
