@@ -21,7 +21,7 @@ body {
 
 .block1 {
     width: 50%;
-    background-image: url(../best/image/bg.jpg);
+    background-image: url(../iintoo_demo/image/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -70,7 +70,7 @@ h1 {
 
 .facebook {
     background-color: #255A9B;
-    background-image: url("../best/facebook.svg");
+    background-image: url(../iintoo_demo/facebook.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 15px center;
@@ -79,7 +79,7 @@ h1 {
 
 .linkedin {
     background-color: #0076B6;
-    background-image: url("../best/linkedin.svg");
+    background-image: url(../iintoo_demo/linkedin.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 15px center;
@@ -140,7 +140,7 @@ h2 {
 }
 
 .radio-item {
-    background-image: url(../best/image/info.png);
+    background-image: url(../iintoo_demo/image/info.png);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: right 50%;
